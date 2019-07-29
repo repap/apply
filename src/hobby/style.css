@@ -1,0 +1,18 @@
+.hobby>div {
+    /* font-size: 14px; */
+    display: grid;
+    grid-column: 2 / -2;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(5, minmax(4em, 8em));
+    text-align: center;
+}
+
+.icon {
+    display: block;
+    width: 3em;
+    height: 3em;
+    margin: 0 auto .3em;;
+    border-radius: 50%;
+    border: solid 2px lightskyblue;
+}

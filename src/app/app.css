@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+}
+
+.item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    font-size: 12px;
+    margin: 1em auto;
+    padding: 1em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background: white;
+    max-width: 960px;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+.app header {
+    grid-column: 3 / -3;
+    text-transform: uppercase;
+    border-bottom: 1px solid grey;
+    color: grey;
+    margin: .5em 0 .3em;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.app>div {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-gap: .5em;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 1em 0 2em;
+}
